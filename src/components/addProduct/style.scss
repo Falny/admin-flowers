@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .label-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}

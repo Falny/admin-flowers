@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@use "../../App.scss" as *;
 
 .form-field-select {
   position: relative;
@@ -16,9 +16,9 @@
       display: flex;
       align-items: center;
       gap: 4px;
-      @include LightGreen;
       padding: 2px 5px;
       border-radius: 4px;
+      @include LightGreen;
 
       .delete-icon {
         width: 15px;
@@ -33,8 +33,8 @@
     top: 50%;
     transform: translateY(-50%);
     right: 5px;
-    @include textCrey;
     cursor: pointer;
+    @include textCrey;
   }
 }
 .add-form-field-select {
@@ -42,7 +42,6 @@
 
   .form-select {
     flex-direction: column;
-    @include colorGreen;
     padding: 10px;
     border-radius: 10px;
     width: 0;
@@ -52,15 +51,16 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    @include colorGreen;
 
     .form-select-item {
       text-transform: capitalize;
-      @include LightGreen;
       border-radius: 5px;
       padding: 5px;
       font-weight: 300;
       cursor: pointer;
       transition: all 0.3s;
+      @include LightGreen;
 
       &:hover {
         @include colorGreen;

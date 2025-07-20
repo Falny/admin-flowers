@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@use "../../App.scss" as *;
 
 .product {
   display: flex;
@@ -10,12 +10,12 @@
   .product-item {
     display: flex;
     justify-content: space-between;
-    @include colorGreen;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 300;
     letter-spacing: 1px;
+    @include colorGreen;
 
     .product-img{
       width: 50px;

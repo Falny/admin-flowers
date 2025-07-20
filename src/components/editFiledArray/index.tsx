@@ -1,6 +1,5 @@
 import { ChevronsDown, ChevronsRight, X } from "lucide-react";
 import React from "react";
-import "./style.scss";
 import type { Structura } from "../../redux/slice/structuraSlice";
 import type { Format } from "../../redux/slice/formatSlice";
 import type { Color } from "../../redux/slice/colorSlice";

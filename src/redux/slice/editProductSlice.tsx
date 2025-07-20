@@ -94,7 +94,6 @@ const editSlice = createSlice({
   initialState,
   reducers: {
     editTitle(state, action) {
-      console.log(state.values.title, action);
       state.values.title = action.payload;
     },
     editPrice(state, action) {
@@ -115,11 +114,9 @@ const editSlice = createSlice({
     },
     editNew(state, action) {
       state.values.new = action.payload;
-      console.log(state.values.new);
     },
     editSale(state, action) {
       state.values.sale = action.payload;
-      console.log(state.values.sale);
     },
     editAddStructura(state, action) {
       state.values.structura = [
